@@ -1,13 +1,20 @@
-// 数字枚举
 enum WeekDay {
-  Monday = 1,
-  Tuesday,
-  Wendsday,
-  Thursday,
-  Friday
+  MONDAY,
+  TUESDAY,
+  WENDSDAY,
+  THURSDAY,
+  FRIDAY
 }
 
-console.log(WeekDay.Monday) // 1
-console.log(WeekDay[2]) // Tuesday
+const fn = (day: WeekDay) => {
+  if (day === WeekDay.MONDAY) {
+  } else if (day === WeekDay.TUESDAY) {
+  } else if (day === WeekDay.WENDSDAY) {
+  } else if (day === WeekDay.THURSDAY) {
+  }else if (day === WeekDay.FRIDAY) {
+  } else {
+    day
+  }
+};
 
-export {}
+export {};
