@@ -1,20 +1,29 @@
-enum WeekDay {
-  MONDAY,
-  TUESDAY,
-  WENDSDAY,
-  THURSDAY,
-  FRIDAY
+interface Product {
+  name: string;
+  price: number;
+  account: number;
+  buy(): void;
 }
 
-const fn = (day: WeekDay) => {
-  if (day === WeekDay.MONDAY) {
-  } else if (day === WeekDay.TUESDAY) {
-  } else if (day === WeekDay.WENDSDAY) {
-  } else if (day === WeekDay.THURSDAY) {
-  }else if (day === WeekDay.FRIDAY) {
-  } else {
-    day
-  }
+const p: Product = {
+  name: "iPhone XS Max",
+  price: 1000,
+  account: 1000,
+  buy() {
+    void 0;
+  },
 };
 
-export {};
+interface ModilePhone extends Product {
+  brand: string;
+}
+
+const iphone: ModilePhone = {
+  name: "iPhone XS Max",
+  price: 1000,
+  account: 1000,
+  buy() {
+    void 0;
+  },
+  brand: "Apple",
+};
