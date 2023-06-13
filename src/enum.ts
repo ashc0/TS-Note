@@ -11,20 +11,20 @@ interface WorkOrder {
 }
 
 function processWorkOrder(workOrder: WorkOrder) {
-  if(workOrder.progress === Progress.IN_PROGRESS) {
+  if (workOrder.progress === Progress.IN_PROGRESS) {
     workOrder.progress = sendToLeader(workOrder)
     processWorkOrder(workOrder)
-  } else if(workOrder.progress === Progress.APPROVED_PROGRESS) {
+  } else if (workOrder.progress === Progress.APPROVED_PROGRESS) {
     makePayment(workOrder.id, workOrder.amount)
-  } else if(workOrder.progress === Progress.NOT_APPROVED) {
+  } else if (workOrder.progress === Progress.NOT_APPROVED) {
     sendMessage(workOrder.id)
   } else {
-    console.error("系统出错", workOrder.progress)
+    console.error('系统出错', workOrder.progress)
   }
 }
 
 function sendToLeader(workOrder: WorkOrder): Progress {
-  if(workOrder.id === 123) {
+  if (workOrder.id === 123) {
     return Progress.APPROVED_PROGRESS
   } else {
     return Progress.NOT_APPROVED
