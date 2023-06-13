@@ -1,5 +1,5 @@
 {
-  "name": "Typescript",
+  "name": "typescript-note",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,6 +7,9 @@
     "build": "npx tsc"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "ersola",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.1.3"
+  }
 }
