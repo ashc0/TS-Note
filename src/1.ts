@@ -25,5 +25,20 @@ const iphone: ModilePhone = {
   buy() {
     void 0
   },
-  brand: 'Apple'
+  brand: "Apple",
+};
+
+interface List {
+  add(): void
+  remove(): void
+}
+
+class ArrayList implements List {
+  add() {
+    
+  }
+
+  remove() {
+
+  }
 }
