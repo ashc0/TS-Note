@@ -15,13 +15,13 @@ module.exports = {
   proseWrap: 'preserve',
   // 分号
   semi: false,
-  // 使用单引号
+  // 使用单引号F
   singleQuote: true,
   // 缩进
   // tabWidth: 4,
   // 使用空格缩进
   useTabs: false,
   // 后置逗号，多行对象、数组在最后一行增加逗号
-  trailingComma: 'none',
+  trailingComma: 'none'
   // parser: 'babylon',
 }

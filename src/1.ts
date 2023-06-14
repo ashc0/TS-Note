@@ -1,44 +1,5 @@
-interface Product {
-  name: string
-  price: number
-  account: number
-  buy(): void
-}
+let obj = {username: 'zhangsan', age: 20}
+let un: 'username' = 'username'
 
-const p: Product = {
-  name: 'iPhone XS Max',
-  price: 1000,
-  account: 1000,
-  buy() {
-    void 0
-  }
-}
-
-interface ModilePhone extends Product {
-  brand: string
-}
-
-const iphone: ModilePhone = {
-  name: 'iPhone XS Max',
-  price: 1000,
-  account: 1000,
-  buy() {
-    void 0
-  },
-  brand: "Apple",
-};
-
-interface List {
-  add(): void
-  remove(): void
-}
-
-class ArrayList implements List {
-  add() {
-    
-  }
-
-  remove() {
-
-  }
-}
+let u = obj[un]
+export {}
